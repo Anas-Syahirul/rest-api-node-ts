@@ -5,7 +5,7 @@ import parser from '@typescript-eslint/parser';
 
 export default [
   { languageOptions: { globals: globals.node, parser: parser } },
-  { ignores: ['**/build/*', '**/node_modules', '**/public/*'] },
+  { ignores: ["**/build/*", "**/node_modules", "**/public/*", "**/tsconfig.json"] },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
 ];
